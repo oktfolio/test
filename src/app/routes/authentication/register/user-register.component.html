@@ -1,0 +1,10 @@
+<ng-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+  <ul>
+    <li>username:<input type="text" name="username" formControlName="username"/></li>
+    <li>phone:<input type="text" name="phone" formControlName="phone"/></li>
+    <li>email:<input type="email" name="email" formControlName="email"/></li>
+    <li>password:<input type="password" name="password" formControlName="password"/></li>
+    <li>captcha:<input type="text" name="captcha" formControlName="captcha"/></li>
+    <li><button type="submit">Register</button></li>
+  </ul>
+</ng-form>

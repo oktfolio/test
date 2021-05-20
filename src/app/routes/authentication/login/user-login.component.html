@@ -1,0 +1,10 @@
+<ng-form [formGroup]="form" class="login-form" (ngSubmit)="submitForm()">
+  <ul>
+    <li>username:<input type="text" name="username" formControlName="username"/></li>
+    <li>password:<input type="password" name="password" formControlName="password"/></li>
+    <li>captcha:<input type="text" name="captcha" formControlName="captcha"/></li>
+    <li>remember:<input type="checkbox" name="remember" formControlName="remember"/></li>
+    <li><button type="submit" >Log in</button></li>
+    <a routerLink="/auth/register">register now!</a>
+  </ul>
+</ng-form>
